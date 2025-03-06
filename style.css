@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.varietes.info/wp-content/uploads/2019/04/entreprise-730x487.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgba(245, 245, 220, 0.9); /* Beige */
+  padding: 20px;
+  text-align: center;
+  color: #556B2F; /* Vert olive */
+}
+
+main {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Blanc */
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: #556B2F; /* Vert olive */
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(245, 245, 220, 0.7); /* Beige clair */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+h2:hover {
+  background-color: rgba(245, 245, 220, 0.9); /* Beige plus foncé */
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 20px;
+}
+
+.content.visible {
+  max-height: 1000px; /* Ajustez selon la longueur du contenu */
+  padding: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 5px solid #556B2F; /* Vert olive */
+  padding-left: 15px;
+  margin: 20px 0;
+  color: #556B2F; /* Vert olive */
+}
+
+footer {
+  background-color: rgba(245, 245, 220, 0.9); /* Beige */
+  padding: 20px;
+  text-align: center;
+}
+
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #556B2F; /* Vert olive */
+}
